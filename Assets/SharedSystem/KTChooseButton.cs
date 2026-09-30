@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,5 +8,9 @@ public class KTChooseButton : MonoBehaviour
     public void ChooseThis()
     {
         SceneManager.LoadScene(sceneName);
+    }
+    public void OnValidate()
+    {
+        gameObject.name = $"KTBtn_({sceneName})";
     }
 }
