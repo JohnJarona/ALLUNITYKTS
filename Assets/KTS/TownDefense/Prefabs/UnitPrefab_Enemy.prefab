@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1559901930480158735}
   - component: {fileID: 4737500856051500544}
   m_Layer: 5
-  m_Name: enemy
+  m_Name: UnitPrefab_Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,7 +129,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 50
+  m_GravityScale: 15
   m_Material: {fileID: 6200000, guid: 67e381bc29a413d4da467b49a59aabfe, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -153,4 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c7afb179883ba4d92b13eee630e56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TownDefense.PhysicsBouncerBehaviour
+  mult: 1
+  frq: 1
   _rb: {fileID: 1559901930480158735}

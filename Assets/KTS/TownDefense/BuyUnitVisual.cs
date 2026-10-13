@@ -16,6 +16,7 @@ namespace TownDefense
         [SerializeField] private TMP_Text CostText;
         [SerializeField] private Image sliderImg;
         [SerializeField] private float buyTime;
+        [SerializeField] private AudioSource buysnd;
         public void UpdateCountText(string _text) => CntText.text = _text;
         public void UpdateCostText(string _text) => CostText.text = _text;
         public void Start()
@@ -33,10 +34,11 @@ namespace TownDefense
         {
             sliderImg.fillAmount = progress;
         }
-        [SerializeField] private TownDefManager.chelType myUnit;
+        [SerializeField] private TownDefManager.unitType myUnit;
         private void Press()
-        {
+        { 
             if (TownDefManager.Instance.wheat < cost) return;
+            buysnd.Play();
             BuyText.color = Color.red;
             TownDefManager.Instance.AddWheat(-cost);
             buyButton.interactable = false;
@@ -52,7 +54,7 @@ namespace TownDefense
                 yield return null;
             }
             buyButton.interactable = true;
-            TownDefManager.Instance.SpawnPhysicsChel(myUnit);
+            TownDefManager.Instance.SpawnUnit(myUnit);
             BuyText.color = Color.white;
             UpdateCountText(TownDefManager.Instance.GetUnitCount(myUnit).ToString());
         }

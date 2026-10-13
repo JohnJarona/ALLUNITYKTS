@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 7694209062582455120}
   - component: {fileID: 7759279911583270196}
   m_Layer: 5
-  m_Name: Gen
+  m_Name: UIPrefab_Generator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
