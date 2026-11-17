@@ -17,5 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KTS/TownDefense/MTMainScene.unity
     guid: 8545fbd845896d44f9dfe1347c0e4d90
+  - enabled: 1
+    path: Assets/KTS/RigidBody2dPractice/RBGame.unity
+    guid: 7a81a0f5b9931d74e94f2ee8ae8a2e08
+  - enabled: 1
+    path: Assets/KTS/Practice/MTMainScene.unity
+    guid: 0d5a6095b663bac4b894da66bc379caf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
