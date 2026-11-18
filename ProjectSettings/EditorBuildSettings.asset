@@ -23,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KTS/Practice/MTMainScene.unity
     guid: 0d5a6095b663bac4b894da66bc379caf
+  - enabled: 1
+    path: Assets/KTS/ExplosionArea/ExplosionKT.unity
+    guid: fbe9d54935b55884081ef9ab5065e205
+  - enabled: 1
+    path: Assets/KTS/DragAndDrop/DragAndDrop.unity
+    guid: 4511718e4a763b44193a3d79532e170d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
